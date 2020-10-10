@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    <title>Blackjack Game!</title>
+</head>
+<body>
+    <div class="blackjack-row-1">
+        <h1>PROJECT - TITLE: Blackjack</h1>
+        <h2 class="some-title" id="game-status">Let's Play</h2>
+    </div>
+    <div class="blackjack-row-2">
+        <div class="blackjack-user-div">
+            <h2>You:  <span id="user-score">0</span></h2>
+            <div id="user-div"></div>
+        </div>
+        <div class="blackjack-dealer-div">
+            <h2>Dealer:  <span id="dealer-score">0</span></h2>
+            <div id="dealer-div"></div>
+        </div>
+    </div>
+    <div class="blackjack-row-3">
+        <div class="blackjack-buttons">
+            <button class="btn-primary" id="blackjack-hit-button">Hit</button>
+            <button class="btn-warning" id="blackjack-stand-button">Stand</button>
+            <button class="btn-danger" id="blackjack-deal-button">Deal</button>
+        </div>
+    </div>
+    <div class="blackjack-row-4">
+        <div class="results-table">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Draws</th>
+                    <th>Losses</th>
+                </tr>
+                <tr>
+                    <td><span id="blackjack-wins">0</span></td>
+                    <td><span id="blackjack-draws">0</span></td>
+                    <td><span id="blackjack-losses">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="acknowledgement">
+            <h5>By Samuel N. W..</h5>
+    </div>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

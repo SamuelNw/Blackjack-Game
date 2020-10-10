@@ -1,0 +1,171 @@
+body {
+    /* font-family: 'Sansita Swashed', cursive; */
+    font-family: 'Lobster', cursive;
+    font-family: 'Sansita Swashed', cursive;
+    width: 75%;
+    border: 3px solid black;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackjack-row-1 {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blackjack-row-1 h1 {
+    color: blueviolet;
+    text-decoration: underline blueviolet;
+}
+
+.blackjack-row-2,
+.blackjack-row-3,
+.blackjack-row-4 {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.blackjack-row-2,
+.blackjack-row-3 {
+    color: white;
+    background-image: url('https://media.istockphoto.com/photos/green-poker-table-picture-id502000289?k=6&m=502000289&s=612x612&w=0&h=JGO93i8O4N7XJdk_oYYh0YQJbVCuPDxGKmwtTaOaKEs=');
+    background-color: darkgreen;
+}
+
+.blackjack-user-div,
+.blackjack-dealer-div {
+    border: 1px solid black;
+    display: inline-block;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+.blackjack-row-2 img {
+    width: 20%;
+    height: 130px; 
+    padding: 10px;
+}
+
+.blackjack-buttons {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    padding: .375rem .75rem;
+    user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-danger:active {
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
+.btn-danger:focus {
+    color: white;
+    background-color: #c82333;
+    border-color: #bd2130;
+    box-shadow: 0 0 0 0.2rem rgba(225,83,97,.5);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    width: 90px;
+    height: 40px;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn-primary:active {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn-primary:focus {
+    color: white;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
+    height: 40px;
+    width: 90px;
+}
+
+.btn-warning:hover{
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-warning:active {
+    background-color: #d39e00;
+    border-color: #c69500;
+}
+
+.btn-warning:focus {
+    color: black;
+    background-color: #e0a800;
+    border-color: #d39e00;
+    box-shadow: 0 0 0 0.2rem rgba(222,170,12,.5);
+}
+
+.blackjack-row-4 {
+    height: 70px;
+    vertical-align: middle;
+    border-bottom: 1px solid lightgrey;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.th {
+    padding: 10px;
+}
+
+.acknowledgement {
+    text-align: end;
+}

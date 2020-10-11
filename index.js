@@ -72,7 +72,7 @@ function updateScore(card, activePlayer) {
     let scoreSpan = document.getElementById(`${activePlayer["score-span"]}`)
 
     if (card === "A") {
-        if (activePlayer["score"] += BlackjackGameRes["CardsMap"][card][1] > 21) {
+        if (activePlayer["score"] + BlackjackGameRes["CardsMap"][card][1] > 21) {
             activePlayer["score"] += BlackjackGameRes["CardsMap"][card][0];
         } else {
             activePlayer["score"] += BlackjackGameRes["CardsMap"][card][1];
@@ -81,7 +81,7 @@ function updateScore(card, activePlayer) {
         activePlayer["score"] += BlackjackGameRes["CardsMap"][card];
     };
         
-    if (activePlayer["score"] < 21) {
+    if (activePlayer["score"] <= 21) {
         scoreSpan.textContent = activePlayer["score"];
     } else {
         document.getElementById(`${activePlayer["score-span"]}`).textContent = "BUST!";
@@ -150,7 +150,7 @@ async function blackjackStand() {
     //change the standButtonStatus to true before anything else
     BlackjackGameRes["standButtonStatus"] = true;
 
-    while(DEALER["score"] < 15) {
+    while(DEALER["score"] < 15) {           //suggested a 15 for the bot, if its score hits 15 it shouldnt hit again
         let card = randomCard();
         //showCard function
         showCard(card, DEALER);
